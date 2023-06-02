@@ -33,16 +33,35 @@ export default function Home() {
           <Image src={nlwLogo} alt="NLW SPACETIME" />
 
           <div className="max-w-[420px] space-y-4">
-            <h1 className="leading-title mt-5 text-5xl font-bold text-gray-50">
+            <h1 className="leading-title text-5xl font-bold text-gray-50">
               Sua cápsula do tempo
             </h1>
-            <p>
+            <p className="text-lg leading-relaxed">
               Colecione momentos marcantes da sua jornada e compartilhe (se
               quiser) com o mundo!
             </p>
           </div>
 
-          <a href="/">CADASTRAR LEMBRANÇA</a>
+          <a
+            href="/"
+            className="inline-block rounded-full bg-green-500 px-5 py-3 font-alt text-sm uppercase leading-none text-black hover:bg-green-600"
+          >
+            CADASTRAR LEMBRANÇA
+          </a>
+        </div>
+
+        {/* Copyrigth */}
+
+        <div className="text-sm leading-relaxed">
+          Feito com 💜 no NLW da{' '}
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.rocketseat.com.br"
+            className="text-gray-100 underline hover:text-gray-50"
+          >
+            Rocketseat
+          </a>
         </div>
       </div>
 
@@ -51,7 +70,10 @@ export default function Home() {
         <div className="flex flex-1 items-center justify-center">
           <p className="w-[360px] text-center leading-relaxed">
             Você ainda não registrou nenhuma lembrança, comece a{' '}
-            <a href="/" className="underline hover:text-gray-50">
+            <a
+              href="/"
+              className="underline transition-colors hover:text-gray-100"
+            >
               criar agora!
             </a>
           </p>
