@@ -1,7 +1,7 @@
 import { Copyright } from '../components/Copyright'
 import { Hero } from '../components/Hero'
 import { SignIn } from '../components/SignIn'
-import { EmptyMemories } from '../components/EmptyMemories';
+import { EmptyMemories } from '../components/EmptyMemories'
 
 export default function Home() {
   return (
@@ -26,7 +26,7 @@ export default function Home() {
 
       {/* Rigth */}
       <div className="flex flex-col bg-[url(../assets/bg-stars.svg)] bg-cover p-16">
-<EmptyMemories />
+        <EmptyMemories />
       </div>
     </main>
   )
